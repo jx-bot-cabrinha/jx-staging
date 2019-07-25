@@ -11,12 +11,12 @@ spec:
  http:
  - route:
    - destination:
-       host: go-quick.jx-staging.svc.cluster.local
+       host: jx-go-quick-primary.jx-staging.svc.cluster.local
        port:
          number: 80
      weight: 99
    - destination:
-       host: go-quick.canary.gopro-platform.com
+       host: jx-go-quick-canary.jx-staging.svc.cluster.local
        port:
          number: 80
      weight: 1
